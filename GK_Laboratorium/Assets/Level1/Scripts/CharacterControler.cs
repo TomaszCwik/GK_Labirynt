@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//dopisane
+using UnityEngine.UI;
 
 public class CharacterControler : MonoBehaviour
 {
@@ -12,13 +14,46 @@ public class CharacterControler : MonoBehaviour
     public bool isRunning = false;
     public bool isGrounded;
     Rigidbody rb;
+
+
+    //dopisane
+    public Text countText;
+    private int count;
+
+    //end dopisane
+
     // Start is called before the first frame update
     void Start()
     {
+        //dopisane
+        count = 0;
+        countText.text = "Count: " + count.ToString();
+        //end
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 1.5f, 0.0f);
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    //dopsane
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();       
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Diamond"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
+    }
+
+
+
+    //
     void OnCollisionStay()
     {
         isGrounded = true;
