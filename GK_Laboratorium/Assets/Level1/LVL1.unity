@@ -312,10 +312,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 165582184}
-  - component: {fileID: 165582187}
-  - component: {fileID: 165582186}
-  - component: {fileID: 165582185}
+  - component: {fileID: 546239090}
+  - component: {fileID: 546239089}
+  - component: {fileID: 546239088}
+  - component: {fileID: 546239091}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Untagged
@@ -329,15 +329,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165582183}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 1.5, z: -2.761}
-  m_LocalScale: {x: 0.050000004, y: 2.5, z: 1}
+  m_GameObject: {fileID: 546239087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.544, z: 0}
+  m_LocalScale: {x: 1.0555546, y: 0.020047007, z: 13.337682}
   m_Children: []
-  m_Father: {fileID: 1418360777}
-  m_RootOrder: 22
+  m_Father: {fileID: 1134591767}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &165582185
+--- !u!114 &546239091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546239087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ecf5e4b045ec649870bdaa0d65e7c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 5
+  smoothing: 2
+--- !u!1 &622846380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622846384}
+  - component: {fileID: 622846383}
+  - component: {fileID: 622846382}
+  - component: {fileID: 622846381}
+  m_Layer: 0
+  m_Name: "Pod\u0142oga_Lvl1"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &622846381
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -404,10 +437,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 240615426}
-  - component: {fileID: 240615429}
-  - component: {fileID: 240615428}
-  - component: {fileID: 240615427}
+  - component: {fileID: 1134591767}
+  - component: {fileID: 1134591766}
+  - component: {fileID: 1134591765}
+  - component: {fileID: 1134591764}
+  - component: {fileID: 1134591770}
+  - component: {fileID: 1134591763}
   m_Layer: 0
   m_Name: Wejscie_Sciany
   m_TagString: Untagged
@@ -421,19 +456,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240615425}
-  m_LocalRotation: {x: 0.0014761472, y: 0.0031013219, z: -0.004772093, w: 0.9999827}
-  m_LocalPosition: {x: -0.0013909255, y: 0.0004413128, z: -0.0004014373}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2004301659}
-  - {fileID: 1530776831}
-  - {fileID: 1589426552}
-  m_Father: {fileID: 325403799}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0.171, y: 0.35500002, z: -0.546}
---- !u!65 &240615427
-BoxCollider:
+  m_GameObject: {fileID: 1134591762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887b18432e9dc8d4d9cecdac203596a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: {x: 0, y: 0, z: 0}
+  jumpForce: 1
+  speed: 10
+  isGrounded: 0
+--- !u!136 &1134591764
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
