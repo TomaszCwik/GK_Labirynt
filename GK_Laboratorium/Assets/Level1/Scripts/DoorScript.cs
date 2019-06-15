@@ -26,23 +26,8 @@ public class DoorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (Input.GetKeyDown(openningKey))
-<<<<<<< HEAD
             { 
-=======
-            {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of b023ce5... Dodanie Mostu
-=======
->>>>>>> parent of b023ce5... Dodanie Mostu
-=======
->>>>>>> parent of b023ce5... Dodanie Mostu
-=======
->>>>>>> parent of b023ce5... Dodanie Mostu
-=======
->>>>>>> parent of b023ce5... Dodanie Mostu
+                 {
                 if (slide)
                 {
                     StartCoroutine(SlideDoors());
