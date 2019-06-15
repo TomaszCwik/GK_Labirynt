@@ -25,9 +25,10 @@ public class DoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(openningKey))
-            {
-
+            //if (Input.GetKeyDown(openningKey))
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    
                 if (slide)
                 {
                     StartCoroutine(SlideDoors());
