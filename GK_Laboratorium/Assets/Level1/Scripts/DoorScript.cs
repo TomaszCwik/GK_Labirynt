@@ -27,6 +27,7 @@ public class DoorScript : MonoBehaviour
         {
             if (Input.GetKeyDown(openningKey))
             {
+
                 if (slide)
                 {
                     StartCoroutine(SlideDoors());
