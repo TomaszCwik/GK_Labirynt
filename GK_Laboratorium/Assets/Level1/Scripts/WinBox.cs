@@ -6,9 +6,6 @@ public class WinBox : MonoBehaviour
 {
 private void onTriggerEnter (Collider other)
     {
-        if(GameObject.Find("Gracz"))
-        {
-           SendMessage("Finnish");
-        }
-    }
+        GameObject.Find("Player").SendMessage("Finnish");
+}
 }

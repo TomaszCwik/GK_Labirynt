@@ -16,14 +16,14 @@ public class DoorScript : MonoBehaviour
 
     private void Awake()
     {
-        doors = transform.Find("Drzwi").gameObject;
+        doors = transform.Find("doors").gameObject;
         startPosition = doors.transform.position;
         anim = doors.GetComponent<Animator>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Gracz"))
+        if (other.CompareTag("Player"))
         {
             if (Input.GetKeyDown(openningKey))
             {
