@@ -18,7 +18,7 @@ public class CharacterControler : MonoBehaviour
 
     //dopisane
     public Text countText;
-    private int count;
+    public int count;
 
     //end dopisane
 

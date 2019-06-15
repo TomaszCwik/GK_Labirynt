@@ -24,11 +24,13 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
-        {
-            //if (Input.GetKeyDown(openningKey))
-                if (Input.GetKeyDown(KeyCode.E))
+        {       
+                if (Input.GetKeyDown(openningKey))
                 {
-                    
+                //if(count==0)
+                //{
+                //    countText.text = "Count: " + count.ToString();
+                //}
                 if (slide)
                 {
                     StartCoroutine(SlideDoors());
