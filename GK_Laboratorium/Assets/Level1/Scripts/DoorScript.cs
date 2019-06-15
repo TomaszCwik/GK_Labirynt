@@ -33,6 +33,9 @@ public class DoorScript : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b023ce5... Dodanie Mostu
+=======
 >>>>>>> parent of b023ce5... Dodanie Mostu
 =======
 >>>>>>> parent of b023ce5... Dodanie Mostu
