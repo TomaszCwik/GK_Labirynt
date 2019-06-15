@@ -13,7 +13,7 @@ public class BridgeMechanizm : MonoBehaviour
     {
         Mechanizm = transform.Find("Mechanizm").gameObject;
         anim = Mechanizm.GetComponent<Animator>();
-    }
+    }//coś tu kurwa nie działą
 
     private void OnTriggerStay(Collider other)
     {

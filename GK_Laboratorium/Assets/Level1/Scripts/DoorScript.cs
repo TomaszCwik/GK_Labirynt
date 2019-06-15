@@ -5,8 +5,8 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
 
-    public bool slide, rotate;
-    public float speed;
+    private bool slide ;
+    private float speed = 3;
     public KeyCode openningKey;
     public Vector3 endPosition;
     Vector3 startPosition;
@@ -26,24 +26,23 @@ public class DoorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (Input.GetKeyDown(openningKey))
+<<<<<<< HEAD
+            { 
+=======
             {
-
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b023ce5... Dodanie Mostu
+=======
+>>>>>>> parent of b023ce5... Dodanie Mostu
+=======
+>>>>>>> parent of b023ce5... Dodanie Mostu
+=======
+>>>>>>> parent of b023ce5... Dodanie Mostu
                 if (slide)
                 {
                     StartCoroutine(SlideDoors());
-                }
-                else if (rotate)
-                {
-                    if (!isOpen)
-                    {
-                        isOpen = !isOpen;
-                        anim.SetBool("isOpened", true);
-                    }
-                    else
-                    {
-                        isOpen = !isOpen;
-                        anim.SetBool("isOpened", false);
-                    }
                 }
             }
         }
