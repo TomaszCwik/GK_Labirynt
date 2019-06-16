@@ -22,7 +22,7 @@ public class BridgeMechanizm : MonoBehaviour
         {
             if (Input.GetKeyDown(openningKey))
             {
-                print("Dziala");
+                //print("Dziala");
                 if (!isOpen)
                 {
                     isOpen = !isOpen;
